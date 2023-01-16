@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gene's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="h1">Gene Marc Llagas</h1>
+    <ul class="right">
+        <li>still a student</li>
+        <li>here in La Verdad</li>
+        <li>BSIS 2nd Year Student</li>
+        <li>20 years living in Planet called Earth</li>
+    </ul>
+    <br>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="/imahe/sllideshow/swtzrlnd.png" class="swtzy">
+            <div class="text">Switzerland</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numbertext" style="color: black;">2 / 7</div>
+            <img src="/imahe/sllideshow/vineyard.png" class="swtzy">
+            <div class="text">Vineyard</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="/imahe/sllideshow/winery.png" class="swtzy">
+            <div class="text">Winery</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="/imahe/sllideshow/penthouse.png" class="swtzy">
+            <div class="text">Penthouse</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numbertext" style="color: black;">5 / 7</div>
+            <img src="/imahe/sllideshow/doberman.png" class="swtzy">
+            <div class="text">Doberman</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="/imahe/sllideshow/dodgechallenger.png" class="swtzy">
+            <div class="text">Hellcat</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="/imahe/sllideshow/way.png" class="swtzy">
+            <div class="text">Road</div>
+        </div>
+
+        <a class="prev" onclick="plusslides(-1)">❮</a>
+        <a class="next" onclick="plusslides(1)">❯</a>
+    </div>
+    <br>
+
+    <div style="text-align: center;">
+    <span class="dot" onclick="currentSLide(1)"></span>
+    <span class="dot" onclick="currentSLide(2)"></span>
+    <span class="dot active" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+    <br>
+
+    <div class="me">
+        <h2 class="about">About me</h2>
+        <div class="quotes">
+            <q>"take things easy but always give your best shot"</q>
+            <br>
+            <p>-Gene Marc</p>
+        </div>
+    
+        <img src="/imahe/imggene/geneee.jpg" class="gene">
+    </div>
+    <br><br><br>
+    <div class="hobby">
+        <div>
+            <p class="p">My Hobby</p>
+            <img src="/imahe/myhob/basketball.gif" class="main-hob">
+        </div>
+    
+
+        <div class="lap">
+            <img src="/imahe/myhob/trae.gif" class="hob">
+            <p>"when got a points, make a taunt and don't be humble"</p>
+        </div>
+
+        <div class="lap">
+            <img src="/imahe/myhob/icetraegif.gif" class="hob">
+            <p>like this</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="myhob">
+        <p class="playing">playing basketball might really look dangerous for others well it really is, but you should take a risk because you will feel the joy when you are playing with your friends or other people <br><br>
+        "Everything negative - pressure, challenges - are all an opportunity for me to rise." <br>-Kobe Bryant</p>
+
+        <img src="/imahe/myhob/kobe.png" class="court">
+
+        <div>
+            <img src="/imahe/myhob/court.png" class="court">
+
+            <p>When you step in the court you might feel the pressure of the other player they'll also feel you so give your best shot and you will have the last laugh.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="role">
+        <div>
+            <p class="point-guard">Keep practicing never let somebody tell you that you're too small or too slow. <br>
+            <br> -unknown point guard </p>
+        </div>
+
+        <q class="thecourt">The King of the Court!!! <br>Lebron James</q>
+        <img src="/imahe/myhob/king.png" class="kingg">
+    </div>
+
+
+    <div class="with-me">
+        <h2 class="h2">Play with Me</h2>
+        <img src="/imahe/myhob/play.png">
+    </div>
+
+    <div class="address">
+        <p>Address</p>
+        <p>brgy 123 </p>
+        <p>Email</p>
+        <p>marcllagas23@gmail.com</p>
+        <p>Mobile#</p>
+        <p>09673629519</p>
+    </div>
+
+    <script> let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusslides(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function currentSLide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "flex";
+            dots[slideIndex-1].className += "active";
+        }</script>
+ 
+</body>
+</html>
